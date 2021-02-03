@@ -12,6 +12,22 @@
   </head>
 
   <body class="bg-green-200">
-  <%= yield %>
+    <header class="bg-green-500 h-12 p-8">
+      <div class="max-w-screen-lg mx-auto">
+        <p class="float-left">The Swole Site</p>
+        <nav>
+          <ul class="flex justify-around w-3/12 float-right">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <div class="mx-auto max-w-screen-lg">
+      <%= yield %>
+    </div>
+  
   </body>
 </html>
