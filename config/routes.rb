@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   root "home#index"
   
   get "/home", to: "home#index"
-
-  get "/exercises", to: "exercise#index"
+  
+  # resources :exercise is different 
+  # why doesn't it think I have a create method defined? 
+  # ask Wendy
+  resources :exercises
 end

@@ -1,0 +1,13 @@
+<h1>Add an Exercise</h1>
+
+<%= form_with model: @exercise do |form| %>
+    <div>
+        <%=form.label :title, :class => 'block' %>
+        <%= form.text_field :title %>
+    </div>
+    <div>
+        <%=form.label :description, :class => 'block' %>
+        <%= form.text_area :description %>
+    </div>
+    <%= form.submit %>
+<% end %>

@@ -16,11 +16,11 @@
       <div class="max-w-screen-lg mx-auto">
         <%= link_to "The Swole Site", root_path, :class => "float-left" %>
         <nav>
-          <ul class="flex justify-around w-3/12 float-right">
+          <ul class="flex justify-around w-6/12 float-right">
             <li>
-              <%= link_to "Exercises", exercises_path %>
+              <%= link_to "See All Exercises", exercises_path %>
             </li>
-            <li><a href="#">Link 2</a></li>
+            <li><%= link_to "Create an Exercise", new_exercise_path %></li>
             <li><a href="#">Link 3</a></li>
           </ul>
         </nav>
